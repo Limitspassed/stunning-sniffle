@@ -7,13 +7,14 @@ body, h1, h2, h3, p, ul, li {
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    line-height: 1.6;
 }
 
 header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 nav ul {
@@ -27,28 +28,51 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
+    font-weight: bold;
 }
 
-section {
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
     padding: 20px;
 }
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .project {
-    margin: 20px;
-    cursor: pointer; /* Add a cursor pointer to indicate interactivity */
+    margin: 20px 0;
+    cursor: pointer;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
 }
 
 .project-description {
-    display: none; /* Hide project descriptions initially */
-    background-color: #f5f5f5;
-    padding: 10px;
-    border: 1px solid #ddd;
+    display: none;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
 }

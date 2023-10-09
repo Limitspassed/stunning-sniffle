@@ -3,45 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to this Test Wensote</title>
+    <title>Welcome to this Test Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>This is a header</h1>
-        <p>This is a paragraph.</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Test Website</h1>
+        <p>Your source for testing and exploration.</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Welcome to my personal website! This website is dedicated to testing and experimentation.</p>
+            </div>
+        </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my personal website!</p>
-    </section>
+        <section id="portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="project" onclick="toggleProjectDescription(this)">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p class="project-description">A sample project for testing purposes.</p>
+                </div>
+                <!-- Add more projects here -->
+            </div>
+        </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="project" onclick="toggleProjectDescription(this)">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project 1</h3>
-            <p class="project-description">Test Description</p>
-        </div>
-        <!-- Add more projects here -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at <a href="mailto:your@email.com">fake@email.com</a>.</p>
-    </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>You can reach me at <a href="mailto:fake@email.com">fake@email.com</a>.</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 Testing Purposes</p>
+        <div class="container">
+            <p>&copy; 2023 Testing Purposes</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
